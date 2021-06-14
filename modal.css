@@ -1,0 +1,148 @@
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 132, 155, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s,
+                opacity 0.25s 0s,
+                transform 0.25s;
+}
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #272A2F;
+    width: 656px;
+    height: 586px;
+    padding: 49px 45px 49px 44px;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s,
+                opacity 0.25s 0s,
+                transform 0.25s;
+}
+
+.modal-title{
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+}
+.modal-text{
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+}
+.input{
+    background: #324B53;
+}
+::-webkit-input-placeholder {
+    color:#8EA5AC;
+}
+.name-modal{
+    width: 200px;
+    height: 50px;
+    padding-left: 16.26px;
+    margin-bottom: 20px;
+    margin-top: 26px;
+}
+.email-modal{
+    width: 347px;
+    height: 50px;
+    padding-left: 22px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+    margin-top: 26px;
+}
+.text-modal{
+    min-width: 567px;
+    min-height: 219px;
+    max-width: 567px;
+    max-height: 219px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 16px;
+    resize: none;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+}
+.contact-send-btn{
+    border: 2px solid #ffffff;
+    width: 217px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 26px;
+    cursor: pointer;
+    transition: .5s;
+}
+.input-error{
+    box-sizing: border-box;
+    border: 1.5px solid red;
+}
+.contact-send-btn:hover{
+    background-color: #19849B;
+    border: 2px solid #19849B;
+}
+
+@media screen and (max-width: 375px){
+    .modal-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #272A2F;
+        width: 335px;
+        height: 400px;
+        padding: 29px 25px 29px 24px;
+        overflow: auto;
+    }
+    .name-modal{
+        width: 100%;
+    }
+    .email-modal{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .text-modal{
+        min-width: 100%;
+        min-height: 219px;
+        max-width: 100%;
+        max-height: 219px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 16px;
+        resize: none;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+    }
+    .contact-send-btn{
+        border: 2px solid #ffffff;
+        width: 217px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-top: 26px;
+        cursor: pointer;
+        transition: .5s;
+    }
+}
